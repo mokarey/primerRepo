@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+ 
+/*----------GRID-AREAS----------*/
+
+.border{
+    border: solid black 1px;
+}
+
+#grid{
+    display: grid;
+    grid-template-areas: 
+    "nav cabeza cabeza cabeza"
+    "nav section section section"
+    "destacado destacado destacado destacado"
+    "footer footer footer footer"
+    ;
+    
+    
+    /*grid-template-columns: 15%;
+    grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
+    */
+
+}
+
+header{
+    grid-area: cabeza;
+    background-image: url(../Imagenes/cyberstorepr.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    text-align: center;
+    
+}
+
+nav{
+    grid-area: nav;
+}
+
+
+#juegaGratis{
+    grid-area:section;
+    background-color: rgb(46, 5, 158);
+}
+
+#destacado{
+    grid-area: destacado;
+    background-color: rgb(46, 5, 158);
+    
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.h4{
+    font-size: 20px;
+}
+
+/*----------HEADER----------*/
+
+.portada{
+     text-align: center;
+    
+
+}
+
+.portada h1{
+    font-size: 300%;
+    padding: 20px;
+    color: aquamarine;
+}
+
+nav{
+    background-color: rgb(14, 13, 13);
+    color: rgb(91, 201, 164);
+    text-align: center;
+    
+}
+
+.navGrid li{
+    display: flex;
+    justify-content: center; 
+    flex-flow: column;
+    margin: 10px 20px 10px 20px;
+    padding: 10px 5px 10px 5px;
+    background-color: aquamarine;
+    list-style: none;
+    border-radius: 5px;
+}
+
+/*----------MAIN----------*/
+
+.h2D{
+    font-size: 2rem;
+    color: rgb(84, 209, 167);
+    text-align: center;
+    padding: 10px;
+    text-shadow: 3px 3px 0 black;
+}
+
+.h2{
+    font-size: 2rem;
+    color: rgb(255, 251, 0);
+    text-align: center;
+    padding: 10px;
+    text-shadow: 5px 5px 0 black;
+
+}
+
+.galeria{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.galeriaS{
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(27, 104, 167);
+    border-bottom: solid 5px rgb(80, 229, 255);
+    border-right: solid 5px rgb(80, 229, 255);
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+    justify-content: flex-end;
+}
+
+.galeriaS h3{
+    padding: 5px;
+}
+
+.galeriaS p{
+    padding: 5px;
+}
+
+.galeriaS img{
+    width: 200px;
+    border: solid rgb(0, 60, 170) 4px;
+}
+
+.galeriaS a{
+    font-weight: 700;
+    color: rgb(77, 211, 211);
+    
+}
+
+.galeria2{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    
+}
+
+.galeria2 h2{
+    font-size: 3rem;
+}
+
+.galeriaS2 img{
+    width: 200px;
+    border: solid rgb(255, 251, 0) 4px;
+}
+
+.galeriaS2{
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(27, 104, 167);
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+    justify-content: center;
+    align-content: center;
+    border: solid 5px yellow;
+}
+
+.galeriaS2 h3{
+    padding: 5px;
+}
+
+.galeriaS2 p{
+    padding: 5px;
+    margin: 2px  5px  2px  5px;
+}
+
+.galeriaS2 a{
+    font-weight: 700;
+    color: rgb(238, 255, 0);
+    
+}
+
+/*----------FOOTER----------*/
+
+.foot article{
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+.foot article a{
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    color: rgb(26, 166, 209);
+}
+
